@@ -1,4 +1,3 @@
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { MantineProvider } from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
 import { MoralisProvider } from "react-moralis";
