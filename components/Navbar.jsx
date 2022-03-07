@@ -1,4 +1,4 @@
-import { useState, useEffect, forwardRef } from "react";
+import { useState, useEffect, forwardRef, ReactNode } from "react";
 import { useMoralis, useChain } from "react-moralis";
 import { Center, Anchor, Image, Button, Avatar, Grid, Menu, Divider, Text, Group, UnstyledButton, UnstyledButtonProps, Header } from "@mantine/core";
 import { useNotifications } from "@mantine/notifications";
@@ -45,6 +45,7 @@ const UserButton = forwardRef(({ account, icon, ...others }, ref) => (
 		</Group>
 	</UnstyledButton>
 ));
+UserButton.displayName = "UserButton";
 
 export const Navbar = () => {
 	const notifications = useNotifications();
